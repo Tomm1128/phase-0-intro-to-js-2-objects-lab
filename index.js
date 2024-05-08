@@ -12,4 +12,10 @@ const updateEmployeeWithKeyAndValue = (employee, key, value) => {
     return updateEmployee;
 }
 
+const destructivelyUpdateEmployeeWithKeyAndValue = (employee, key, value) => {
+    employee[key] = value
+
+    return employee
+}
+
 
