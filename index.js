@@ -18,4 +18,10 @@ const destructivelyUpdateEmployeeWithKeyAndValue = (employee, key, value) => {
     return employee
 }
 
+const deleteFromEmployeeByKey = (employee, key) => {
+    const updateEmployee = { ...employee}
 
+    delete updateEmployee[key]
+
+    return updateEmployee
+}
